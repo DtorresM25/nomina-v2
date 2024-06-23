@@ -14,7 +14,7 @@ Clone el repositorio y abralo en el IDE de su preferencia, debe contar con la ve
 docker login ghcr.io
 
 # push imagen del docker al repositorio
-docker push ghcr.io/dtorresm25/nomina-konecta
+docker push ghcr.io/dtorresm25/nomina-v2:tag_name
 ```
 
 ## desplegar como contendor de docker con docker-compose
