@@ -22,8 +22,16 @@ docker push ghcr.io/dtorresm25/nomina-v2:tag_name
 Cree el siguiente archivo docker-compose.yml
 
 ```yml
-# desplegar contenedor con la aplicacion
-docker run -d -p 8080:8080 nomina:tag_name
+version: "3.8"
+
+services:
+  app:
+    image: ghcr.io/dtorresm25/nomina-v2:main
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+    restart: always
 ```
 
 Ejecute el siguiente comando para correr el contendor de docker
