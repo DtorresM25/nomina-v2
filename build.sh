@@ -33,7 +33,7 @@ mv "$BUILD_FILE" target/
 
 # Construir la imagen Docker
 echo "Construyendo la imagen Docker..."
-docker build -t ghcr.io/nomina-konecta:$1 .
+docker build -t ghcr.io/nomina-v2:$1 .
 
 if [ $? -ne 0 ]; then
   echo "La construcción de la imagen Docker falló. Abortando."
